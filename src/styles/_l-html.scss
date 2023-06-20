@@ -1,0 +1,8 @@
+@use "./h-colors" as C;
+@use "./h-fonts" as F;
+
+html {
+    font-family: F.$fontFamily;
+    font-size: F.$fontSize;
+    line-height: 1.5;
+}

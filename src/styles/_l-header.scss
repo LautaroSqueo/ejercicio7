@@ -1,0 +1,59 @@
+@use "./h-colors" as C;
+@use "./h-fonts" as F;
+
+.Header .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 12rem;
+
+    & .article {
+        & .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & .main {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            & h1 {
+                color: C.$darkGrayishBlue;
+                font-weight: 600;
+            }
+            & p {
+                width: 100%;
+                color: C.$grayishBlue;
+                font-size: 1rem;
+                padding: 0rem 20rem 0rem 20rem;
+            }
+        }
+        & .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            & .button {
+                width: 150px;
+                height: 40px;
+                border-radius: 2rem;
+                text-align: center;
+                font-size: 0.8rem;
+                color: white;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:first-child {
+                    background-color: C.$cyan;
+                }
+                &:nth-child(2) {
+                    background-color: C.$lightBlue;
+                }
+            }
+        }
+    }
+}

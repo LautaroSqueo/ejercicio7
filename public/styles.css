@@ -1,0 +1,133 @@
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.Header .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 12rem;
+}
+.Header .section .article .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header .section .article .main {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Header .section .article .main h1 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+.Header .section .article .main p {
+  width: 100%;
+  color: hsl(201, 11%, 66%);
+  font-size: 1rem;
+  padding: 0rem 20rem 0rem 20rem;
+}
+.Header .section .article .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.Header .section .article .footer .button {
+  width: 150px;
+  height: 40px;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.Header .section .article .footer .button:first-child {
+  background-color: hsl(171, 66%, 44%);
+}
+.Header .section .article .footer .button:nth-child(2) {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.Main .section_snippets article {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px 200px 200px;
+}
+.Main .section_snippets article .header {
+  grid-column: 4/10;
+  grid-row: 1/2;
+  text-align: center;
+}
+.Main .section_snippets article .header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+}
+.Main .section_snippets article .header p {
+  color: hsl(201, 11%, 66%);
+  width: 100%;
+  padding: 0rem 7rem 0rem 7rem;
+  margin-top: 1rem;
+}
+.Main .section_snippets article .main {
+  grid-column: 1/13;
+  grid-row: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.Main .section_snippets article .main ul li {
+  margin-bottom: 3rem;
+}
+.Main .section_snippets article .main ul li h3 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  font-size: 1.1rem;
+}
+.Main .section_snippets article .main ul li p {
+  color: hsl(201, 11%, 66%);
+}
+.Main .section_clipboard {
+  margin-top: 3rem;
+}
+.Main .section_clipboard article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.Main .section_clipboard article .header {
+  text-align: center;
+}
+.Main .section_clipboard article .header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+}
+.Main .section_clipboard article .header p {
+  color: hsl(201, 11%, 66%);
+  width: 100%;
+  padding: 0rem 35rem 0rem 35rem;
+  margin-top: 1rem;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+}
+.Footer div {
+  margin: auto 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */

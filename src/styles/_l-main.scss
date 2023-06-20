@@ -1,0 +1,73 @@
+@use "./h-colors" as C;
+@use "./h-fonts" as F;
+
+.Main {
+    & .section_snippets {
+        & article {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 200px 200px 200px;
+            & .header {
+                grid-column: 4 / 10;
+                grid-row: 1 / 2;
+                text-align: center;
+                & h3 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: C.$darkGrayishBlue;
+                }
+                & p {
+                    color: C.$grayishBlue;
+                    width: 100%;
+                    padding: 0rem 7rem 0rem 7rem;
+                    margin-top: 1rem;
+                }
+            }
+            & .main {
+                grid-column: 1 / 13;
+                grid-row: 2 / 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+                & ul {
+                    & li {
+                        margin-bottom: 3rem;
+                        & h3 {
+                            font-weight: 600;
+                            color: C.$darkGrayishBlue;
+                            font-size: 1.1rem;
+                        }
+                        & p {
+                            color: C.$grayishBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section_clipboard {
+        margin-top: 3rem;
+        & article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            & .header {
+                text-align: center;
+                & h3 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: C.$darkGrayishBlue;
+                }
+                & p {
+                    color: C.$grayishBlue;
+                    width: 100%;
+                    padding: 0rem 35rem 0rem 35rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}

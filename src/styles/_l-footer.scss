@@ -1,0 +1,10 @@
+@use "./h-colors" as C;
+@use "./h-fonts" as F;
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    & div {
+        margin: auto 25px;
+    }
+}
