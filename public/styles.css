@@ -40,9 +40,9 @@ html {
   gap: 1rem;
   margin-top: 2rem;
 }
-.Header .section .article .footer .button {
-  width: 150px;
-  height: 40px;
+.Header .section .article .footer button {
+  width: 200px;
+  height: 50px;
   border-radius: 2rem;
   text-align: center;
   font-size: 0.8rem;
@@ -50,11 +50,77 @@ html {
   font-weight: 600;
   cursor: pointer;
 }
-.Header .section .article .footer .button:first-child {
+.Header .section .article .footer .buttonIOS {
   background-color: hsl(171, 66%, 44%);
 }
-.Header .section .article .footer .button:nth-child(2) {
+.Header .section .article .footer .buttonMAC {
   background-color: hsl(233, 100%, 69%);
+}
+.Header .section .article .footer .buttonIOS:hover {
+  filter: contrast(50%);
+}
+.Header .section .article .footer .buttonMAC:hover {
+  filter: contrast(50%);
+}
+@media (max-width: 810px) {
+  .Header .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 12rem;
+  }
+  .Header .section .article .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Header .section .article .main {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Header .section .article .main h1 {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+  }
+  .Header .section .article .main p {
+    width: 100%;
+    color: hsl(201, 11%, 66%);
+    font-size: 1rem;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .Header .section .article .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .Header .section .article .footer button {
+    width: 200px;
+    height: 50px;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .Header .section .article .footer .buttonIOS {
+    background-color: hsl(171, 66%, 44%);
+  }
+  .Header .section .article .footer .buttonMAC {
+    background-color: hsl(233, 100%, 69%);
+  }
+  .Header .section .article .footer .buttonIOS:hover {
+    filter: contrast(50%);
+  }
+  .Header .section .article .footer .buttonMAC:hover {
+    filter: contrast(50%);
+  }
 }
 
 .Main .section_snippets article {
@@ -76,7 +142,7 @@ html {
   color: hsl(201, 11%, 66%);
   width: 100%;
   padding: 0rem 7rem 0rem 7rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 .Main .section_snippets article .main {
   grid-column: 1/13;
@@ -111,7 +177,7 @@ html {
   text-align: center;
 }
 .Main .section_clipboard article .header h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: hsl(210, 10%, 33%);
 }
@@ -119,15 +185,303 @@ html {
   color: hsl(201, 11%, 66%);
   width: 100%;
   padding: 0rem 35rem 0rem 35rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+.Main .section_workflow .article h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+}
+.Main .section_workflow .article p {
+  color: hsl(201, 11%, 66%);
+  width: 100%;
+  padding: 0rem 35rem 0rem 35rem;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+.Main .section_workflow .article .header {
+  text-align: center;
+}
+.Main .section_workflow .article .main {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.Main .section_workflow .article .main div {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.Main .section_workflow .article .main h3 {
+  font-size: 1rem;
+}
+.Main .section_workflow .article .main p {
+  padding: 0;
+  margin-top: 0;
+  width: 50%;
+  text-align: center;
+}
+.Main .section_workflow .article .footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.Main .section_buttons .article {
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Main .section_buttons .article .header h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+}
+.Main .section_buttons .article .header p {
+  color: hsl(201, 11%, 66%);
+  width: 75%;
+  padding: 0rem 0rem 0rem 17rem;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+.Main .section_buttons .article .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.Main .section_buttons .article .main button {
+  width: 200px;
+  height: 50px;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.Main .section_buttons .article .main .buttonIOS {
+  background-color: hsl(171, 66%, 44%);
+}
+.Main .section_buttons .article .main .buttonMAC {
+  background-color: hsl(233, 100%, 69%);
+}
+.Main .section_buttons .article .main .buttonIOS:hover {
+  filter: contrast(50%);
+}
+.Main .section_buttons .article .main .buttonMAC:hover {
+  filter: contrast(50%);
+}
+@media (max-width: 810px) {
+  .Main .section_snippets article {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 200px 200px 200px;
+  }
+  .Main .section_snippets article .header {
+    grid-column: 2/6;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .Main .section_snippets article .header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+  }
+  .Main .section_snippets article .header p {
+    color: hsl(201, 11%, 66%);
+    width: 100%;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .Main .section_snippets article .main {
+    grid-column: 1/13;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .Main .section_snippets article .main picture img {
+    width: 800px;
+    margin-left: 2rem;
+    height: 350px;
+  }
+  .Main .section_snippets article .main ul li {
+    margin-bottom: 3rem;
+  }
+  .Main .section_snippets article .main ul li h3 {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    font-size: 1.1rem;
+  }
+  .Main .section_snippets article .main ul li p {
+    color: hsl(201, 11%, 66%);
+  }
+  .Main .section_clipboard {
+    margin-top: 3rem;
+  }
+  .Main .section_clipboard article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .Main .section_clipboard article .header {
+    text-align: center;
+  }
+  .Main .section_clipboard article .header h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+  }
+  .Main .section_clipboard article .header p {
+    color: hsl(201, 11%, 66%);
+    width: 100%;
+    padding: 0rem 5rem 0rem 5rem;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .Main .section_workflow .article h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+  }
+  .Main .section_workflow .article p {
+    color: hsl(201, 11%, 66%);
+    width: 100%;
+    padding: 0rem 3rem 0rem 3rem;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .Main .section_workflow .article .header {
+    text-align: center;
+  }
+  .Main .section_workflow .article .main {
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .Main .section_workflow .article .main div {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .Main .section_workflow .article .main h3 {
+    font-size: 1rem;
+  }
+  .Main .section_workflow .article .main p {
+    padding: 0;
+    margin-top: 0;
+    width: 80%;
+    text-align: center;
+  }
+  .Main .section_workflow .article .footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 2rem;
+  }
+  .Main .section_buttons .article {
+    margin: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Main .section_buttons .article .header h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+  }
+  .Main .section_buttons .article .header p {
+    color: hsl(201, 11%, 66%);
+    width: 75%;
+    padding: 0rem 0rem 0rem 11.5rem;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .Main .section_buttons .article .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .Main .section_buttons .article .main button {
+    width: 200px;
+    height: 50px;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .Main .section_buttons .article .main .buttonIOS {
+    background-color: hsl(171, 66%, 44%);
+  }
+  .Main .section_buttons .article .main .buttonMAC {
+    background-color: hsl(233, 100%, 69%);
+  }
+  .Main .section_buttons .article .main .buttonIOS:hover {
+    filter: contrast(50%);
+  }
+  .Main .section_buttons .article .main .buttonMAC:hover {
+    filter: contrast(50%);
+  }
 }
 
 .Footer {
+  background-color: #f5f6f8;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 150px;
 }
 .Footer div {
   margin: auto 25px;
+}
+.Footer .contenedorLista {
+  display: flex;
+  gap: 5rem;
+}
+.Footer .contenedorLista ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Footer .contenedorLista li:hover {
+  color: hsl(171, 66%, 44%);
+}
+.Footer .contenedorLogos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.Footer .contenedorLogos img:hover {
+  fill: hsl(171, 66%, 44%);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,9 +2,35 @@
 @use "./h-fonts" as F;
 
 .Footer {
+    background-color: #f5f6f8;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 150px;
     & div {
         margin: auto 25px;
+    }
+    & .contenedorLista {
+        display: flex;
+        gap: 5rem;
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        & li:hover {
+            color: C.$cyan;
+        }
+    }
+    & .contenedorLogos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    & .contenedorLogos {
+        img:hover {
+            fill: C.$cyan;
+        }
     }
 }

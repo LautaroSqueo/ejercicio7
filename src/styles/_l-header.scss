@@ -1,57 +1,127 @@
 @use "./h-colors" as C;
 @use "./h-fonts" as F;
 
-.Header .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem 12rem;
+.Header {
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 12rem;
 
-    & .article {
-        & .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        & .main {
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            & h1 {
-                color: C.$darkGrayishBlue;
-                font-weight: 600;
+        & .article {
+            & .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
-            & p {
-                width: 100%;
-                color: C.$grayishBlue;
-                font-size: 1rem;
-                padding: 0rem 20rem 0rem 20rem;
-            }
-        }
-        & .footer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            & .button {
-                width: 150px;
-                height: 40px;
-                border-radius: 2rem;
+            & .main {
+                display: flex;
                 text-align: center;
-                font-size: 0.8rem;
-                color: white;
-                font-weight: 600;
-                cursor: pointer;
-
-                &:first-child {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                & h1 {
+                    color: C.$darkGrayishBlue;
+                    font-weight: 600;
+                }
+                & p {
+                    width: 100%;
+                    color: C.$grayishBlue;
+                    font-size: 1rem;
+                    padding: 0rem 20rem 0rem 20rem;
+                }
+            }
+            & .footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 2rem;
+                & button {
+                    width: 200px;
+                    height: 50px;
+                    border-radius: 2rem;
+                    text-align: center;
+                    font-size: 0.8rem;
+                    color: white;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+                & .buttonIOS {
                     background-color: C.$cyan;
                 }
-                &:nth-child(2) {
+                & .buttonMAC {
                     background-color: C.$lightBlue;
+                }
+                & .buttonIOS:hover {
+                    filter: contrast(50%);
+                }
+                & .buttonMAC:hover {
+                    filter: contrast(50%);
+                }
+            }
+        }
+    }
+    @media (max-width: 810px) {
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem 12rem;
+
+            & .article {
+                & .header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & .main {
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    & h1 {
+                        color: C.$darkGrayishBlue;
+                        font-weight: 600;
+                    }
+                    & p {
+                        width: 100%;
+                        color: C.$grayishBlue;
+                        font-size: 1rem;
+                        padding: 0rem 2rem 0rem 2rem;
+                    }
+                }
+                & .footer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-top: 2rem;
+                    & button {
+                        width: 200px;
+                        height: 50px;
+                        border-radius: 2rem;
+                        text-align: center;
+                        font-size: 0.8rem;
+                        color: white;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                    & .buttonIOS {
+                        background-color: C.$cyan;
+                    }
+                    & .buttonMAC {
+                        background-color: C.$lightBlue;
+                    }
+                    & .buttonIOS:hover {
+                        filter: contrast(50%);
+                    }
+                    & .buttonMAC:hover {
+                        filter: contrast(50%);
+                    }
                 }
             }
         }
